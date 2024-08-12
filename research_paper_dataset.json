@@ -1,0 +1,1004 @@
+{
+    "abstract": "Despite progress in perceptual tasks such as image classification, computers still perform poorly on cognitive tasks such as image description and question answering. Cognition is core to tasks that involve not just recognizing, but reasoning about our visual world. However, models used to tackle the rich content in images for cognitive tasks are still being trained using the same datasets designed for perceptual tasks. To achieve success at cognitive tasks, models need to understand the interactions and relationships between objects in an image. When asked “What vehicle is the person riding?”, computers will need to identify the objects in an image as well as the relationships riding(man, carriage) and pulling(horse, carriage) to answer correctly that “the person is riding a horse-drawn carriage.” In this paper, we present the Visual Genome dataset to enable the modeling of such relationships. We collect dense annotations of objects, attributes, and relationships within each image to learn these models. Specifically, our dataset contains over 108K images where each image has an average of \\(35\\) objects, \\(26\\) attributes, and \\(21\\) pairwise relationships between objects. We canonicalize the objects, attributes, relationships, and noun phrases in region descriptions and questions answer pairs to WordNet synsets. Together, these annotations represent the densest and largest dataset of image descriptions, objects, attributes, relationships, and question answer pairs.", 
+    "authors": [
+        "Ranjay Krishna", 
+        "Yuke Zhu", 
+        "Oliver Groth", 
+        "Justin Johnson", 
+        "Kenji Hata", 
+        "Joshua Kravitz", 
+        "Stephanie Chen", 
+        "Yannis Kalantidis", 
+        "Li-Jia Li", 
+        "David A. Shamma", 
+        "Michael S. Bernstein", 
+        "Fei-Fei Li"
+    ], 
+    "citations": {
+        "037863c3-e1f8-4e5a-b3f9-1828f8e212f9": {
+            "abstract": "Machine learning is making substantial progress in diverse applications. The success is mostly due to advances in deep learning. However, deep learning can make mistakes and its generalization abilities to new tasks are questionable. We ask when and how one can combine network outputs, when (i) details of the observations are evaluated by learned deep components and (ii) facts and confirmation rules are available in knowledge based systems. We show that in limited contexts the required number of training samples can be low and self-improvement of pre-trained networks in more general context is possible. We argue that the combination of sparse outlier detection with deep components that can support each other diminish the fragility of deep methods, an important requirement for engineering applications. We argue that supervised learning of labels may be fully eliminated under certain conditions: a component based architecture together with a knowledge based system can train itself and provide high quality answers. We demonstrate these concepts on the State Farm Distracted Driver Detection benchmark. We argue that the view of the Study Panel (2016) may overestimate the requirements on `years of focused research' and `careful, unique construction' for `AI systems'.", 
+            "authors": [
+                "András Lőrincz", 
+                "Máté Csákvári", 
+                "Áron Fóthi", 
+                "Zoltán Ádám Milacski", 
+                "András Sárkány", 
+                "Zoltán Tősér"
+            ], 
+            "n_citation": 0, 
+            "title": "Cognitive Deep Machine Can Train Itself", 
+            "venue": "arXiv: Learning", 
+            "year": 2016
+        }, 
+        "0738ab41-7ff1-4641-bb06-b62aa8a94625": {
+            "abstract": "Visual narrative is often a combination of explicit information and judicious omissions, relying on the viewer to supply missing details. In comics, most movements in time and space are hidden in the \"gutters\" between panels. To follow the story, readers logically connect panels together by inferring unseen actions through a process called \"closure\". While computers can now describe the content of natural images, in this paper we examine whether they can understand the closure-driven narratives conveyed by stylized artwork and dialogue in comic book panels. We collect a dataset, COMICS, that consists of over 1.2 million panels (120 GB) paired with automatic textbox transcriptions. An in-depth analysis of COMICS demonstrates that neither text nor image alone can tell a comic book story, so a computer must understand both modalities to keep up with the plot. We introduce three cloze-style tasks that ask models to predict narrative and character-centric aspects of a panel given n preceding panels as context. Various deep neural architectures underperform human baselines on these tasks, suggesting that COMICS contains fundamental challenges for both vision and language.", 
+            "authors": [
+                "Mohit Iyyer", 
+                "Varun Manjunatha", 
+                "Anupam Guha", 
+                "Yogarshi Vyas", 
+                "Jordan L. Boyd-Graber", 
+                "Hal Daumé", 
+                "Larry S. Davis"
+            ], 
+            "n_citation": 0, 
+            "title": "The Amazing Mysteries of the Gutter: Drawing Inferences Between Panels in Comic Book Narratives", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "079b72ec-aa8b-4f6a-8e64-1435db6c7be8": {
+            "abstract": "Recent progress on image captioning has made it possible to generate novel sentences describing images in natural language, but compressing an image into a single sentence can describe visual content in only coarse detail. While one new captioning approach, dense captioning, can potentially describe images in finer levels of detail by captioning many regions within an image, it in turn is unable to produce a coherent story for an image. In this paper we overcome these limitations by generating entire paragraphs for describing images, which can tell detailed, unified stories. We develop a model that decomposes both images and paragraphs into their constituent parts, detecting semantic regions in images and using a hierarchical recurrent neural network to reason about language. Linguistic analysis confirms the complexity of the paragraph generation task, and thorough experiments on a new dataset of image and paragraph pairs demonstrate the effectiveness of our approach.", 
+            "authors": [
+                "Jonathan Krause", 
+                "Justin Johnson", 
+                "Ranjay Krishna", 
+                "Li Fei-Fei"
+            ], 
+            "n_citation": 50, 
+            "title": "A Hierarchical Approach for Generating Descriptive Image Paragraphs", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "08e64c7f-1608-4568-aa4a-5f19ddd34e26": {
+            "abstract": "The majority of man-made objects are designed to serve a certain function, and this is often reflected by the geometry of the objects, or the way that they are used or organized in an environment. In recent years, many efforts in shape analysis have developed methods that extract high-level structural and semantic information from geometric shapes and scenes, especially involving man-made objects. One can argue that the ultimate goal of some of these works is to understand the functionality of the objects. Moreover, there have also been works that explicitly model and incorporate functionality into the processing of shapes and scenes. Thus, functionality has been receiving increasingly more attention in shape analysis and geometric modeling, either directly or indirectly, since functionality considerations can aid in applications such as semantic classification, shape editing and synthesis, as well as product design, development, and fabrication.   In this course, we discuss recent developments that incorporate functionality aspects into the analysis of 3D shapes and scenes, to provide a summary of the state-of-the-art in this area, including a discussion of key ideas and literature works. More specifically, we first discuss approaches that are precursors in this front, such as structure-aware and data-driven methods that learn relationships between shape parts or objects in scenes. Next, we cover works that more explicitly model the functionality of shapes and scenes, such as agent- and interaction-based methods. The course is structured in the form of talks given by four different speakers, aided by electronic slides that include notes for subsequent consultation.", 
+            "authors": [
+                "Ruizhen Hu", 
+                "Oliver van Kaick", 
+                "Youyi Zheng", 
+                "Manolis Savva"
+            ], 
+            "n_citation": 0, 
+            "title": "SIGGRAPH Asia 2016: course notes directions in shape analysis towards functionality", 
+            "venue": "international conference on computer graphics and interactive techniques", 
+            "year": 2016
+        }, 
+        "0be7170c-fe3f-494b-85b0-9c2d7f9c627d": {
+            "abstract": "As humans, we regularly interpret scenes based on how objects are  related , rather than based on the objects themselves. For example, we see a person  riding  an object X or a plank  bridging  two objects. Current methods provide limited support to search for content based on such relations. We present  raid , a relation-augmented image descriptor that supports queries based on inter-region relations. The key idea of our descriptor is to encode region-to-region relations as the spatial distribution of point-to-region relationships between two image regions.  raid  allows sketch-based retrieval and requires minimal training data, thus making it suited even for querying uncommon relations. We evaluate the proposed descriptor by querying into large image databases and successfully extract non-trivial images demonstrating complex inter-region relations, which are easily missed or erroneously classified by existing methods. We assess the robustness of  raid  on multiple datasets even when the region segmentation is computed automatically or very noisy.", 
+            "authors": [
+                "Paul Guerrero", 
+                "Niloy J. Mitra", 
+                "Peter Wonka"
+            ], 
+            "n_citation": 0, 
+            "title": "RAID: a relation-augmented image descriptor", 
+            "venue": "international conference on computer graphics and interactive techniques", 
+            "year": 2016
+        }, 
+        "0e252bd5-864a-402e-9588-7c0f66480797": {
+            "abstract": "Bilinear models provide rich representations compared with linear models. They have been applied in various visual tasks, such as object recognition, segmentation, and visual question-answering, to get state-of-the-art performances taking advantage of the expanded representations. However, bilinear representations tend to be high-dimensional, limiting the applicability to computationally complex tasks. We propose low-rank bilinear pooling using Hadamard product for an efficient attention mechanism of multimodal learning. We show that our model outperforms compact bilinear pooling in visual question-answering tasks with the state-of-the-art results on the VQA dataset, having a better parsimonious property.", 
+            "authors": [
+                "Jinhwa Kim", 
+                "Kyoung Woon On", 
+                "Jeonghee Kim", 
+                "Jung-Woo Ha", 
+                "Byoung-Tak Zhang"
+            ], 
+            "n_citation": 33, 
+            "title": "Hadamard Product for Low-rank Bilinear Pooling", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "1067c582-afce-4c17-bd81-4cdef161d187": {
+            "abstract": "Computer vision systems require large amounts of manually annotated data to properly learn challenging visual concepts. Crowdsourcing platforms offer an inexpensive method to capture human knowledge and understanding, for a vast number of visual perception tasks. In this survey, we describe the types of annotations computer vision researchers have collected using crowdsourcing, and how they have ensured that this data is of high quality while annotation effort is minimized. We begin by discussing data collection on both classic (e.g., object recognition) and recent (e.g., visual story-telling) vision tasks. We then summarize key design decisions for creating effective data collection interfaces and workflows, and present strategies for intelligently selecting the most important data instances to annotate. Finally, we conclude with some thoughts on the future of crowdsourcing in computer vision.", 
+            "authors": [
+                "Adriana Kovashka", 
+                "Olga Russakovsky", 
+                "Li Fei-Fei", 
+                "Kristen Grauman"
+            ], 
+            "n_citation": 0, 
+            "title": "Crowdsourcing in Computer Vision", 
+            "venue": "Foundations and Trends in Computer Graphics and Vision", 
+            "year": 2016
+        }, 
+        "12a58305-cace-4767-9cb3-d4ba44061501": {
+            "abstract": "Impressive progress has been made in the fields of computer vision and natural language processing. However, it remains a challenge to find the best point of interaction for these very different modalities. In this chapter we discuss how attributes allow us to exchange information between the two modalities and in this way lead to an interaction on a semantic level. Specifically we discuss how attributes allow using knowledge mined from language resources for recognizing novel visual categories, how we can generate sentence description about images and video, how we can ground natural language in visual content, and finally, how we can answer natural language questions about images.", 
+            "authors": [
+                "Marcus Rohrbach"
+            ], 
+            "n_citation": 1, 
+            "title": "Attributes as Semantic Units between Natural Language and Visual Recognition", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "13486709-b2ad-4df8-8c79-869183ac664f": {
+            "abstract": "We tackle the problem of learning a rotation invariant latent factor model when the training data is comprised of lower-dimensional projections of the original feature space. The main goal is the discovery of a set of 3-D bases poses that can characterize the manifold of primitive human motions, or movemes, from a training set of 2-D projected poses obtained from still images taken at various camera angles. The proposed technique for basis discovery is data-driven rather than hand-designed. The learned representation is rotation invariant, and can reconstruct any training instance from multiple viewing angles. We apply our method to modeling human poses in sports (via the Leeds Sports Dataset), and demonstrate the effectiveness of the learned bases in a range of applications such as activity classification, inference of dynamics from a single frame, and synthetic representation of movements.", 
+            "authors": [
+                "Matteo Ruggero Ronchi", 
+                "Joon Sik Kim", 
+                "Yisong Yue"
+            ], 
+            "n_citation": 1, 
+            "title": "A Rotation Invariant Latent Factor Model for Moveme Discovery from Static Poses", 
+            "venue": "international conference on data mining", 
+            "year": 2016
+        }, 
+        "17b6ce3b-d173-4777-9967-9ac1cd6c6998": {
+            "abstract": "We introduce the dense captioning task, which requires a computer vision system to both localize and describe salient regions in images in natural language. The dense captioning task generalizes object detection when the descriptions consist of a single word, and Image Captioning when one predicted region covers the full image. To address the localization and description task jointly we propose a Fully Convolutional Localization Network (FCLN) architecture that processes an image with a single, efficient forward pass, requires no external regions proposals, and can be trained end-to-end with a single round of optimization. The architecture is composed of a Convolutional Network, a novel dense localization layer, and Recurrent Neural Network language model that generates the label sequences. We evaluate our network on the Visual Genome dataset, which comprises 94,000 images and 4,100,000 region-grounded captions. We observe both speed and accuracy improvements over baselines based on current state of the art approaches in both generation and retrieval settings.", 
+            "authors": [
+                "Justin Johnson", 
+                "Andrej Karpathy", 
+                "Li Fei-Fei"
+            ], 
+            "n_citation": 106, 
+            "title": "DenseCap: Fully Convolutional Localization Networks for Dense Captioning", 
+            "venue": "computer vision and pattern recognition", 
+            "year": 2016
+        }, 
+        "1f24de8c-ea43-46f1-bbf0-cac5e0c7dfdc": {
+            "abstract": "This work focuses on the semantic relations between scenes and objects for visual object recognition. Semantic knowledge can be a powerful source of information especially in scenarios with few or no annotated training samples. These scenarios are referred to as zero-shot or few-shot recognition and often build on visual attributes. Here, instead of relying on various visual attributes, a more direct way is pursued: after recognizing the scene that is depicted in an image, semantic relations between scenes and objects are used for predicting the presence of objects in an unsupervised manner. Most importantly, relations between scenes and objects can easily be obtained from external sources such as large scale text corpora from the web and, therefore, do not require tremendous manual labeling efforts. It will be shown that in cluttered scenes, where visual recognition is difficult, scene knowledge is an important cue for predicting objects.", 
+            "authors": [
+                "Rene Grzeszick", 
+                "Gernot A. Fink"
+            ], 
+            "n_citation": 0, 
+            "title": "Zero-shot object prediction using semantic scene knowledge", 
+            "venue": "international conference on computer vision theory and applications", 
+            "year": 2017
+        }, 
+        "26b32ea5-2445-4b2c-a88d-078ed06b411d": {
+            "abstract": "There is a growing conviction that the future of computing will crucially depend on our ability to better exploit data to produce more intelligent systems. Increasingly, this will involve drawing simultaneously on multiple heterogeneous modalities, to take full advantage of the vast quantities of images and videos now available on the Web and elsewhere. We give several examples of methods that leverage prior knowledge for better, more semantically informed visual analytics, as well as methods that use multimodal data for better textual analytics. Important progress may come from approaches specifically geared towards harvesting rich multimodal knowledge. For example, our Knowlywood system relies on Hollywood movies to learn about human activities. Once acquired, knowledge of this sort can then be re-used across different tasks, much like humans draw on their accumulated knowledge when making sense of the world.", 
+            "authors": [
+                "Gerard de Melo", 
+                "Niket Tandon"
+            ], 
+            "n_citation": 0, 
+            "title": "\"Seeing is believing: the quest for multimodal knowledge\" by Gerard de Melo and Niket Tandon, with Martin Vesely as coordinator", 
+            "venue": "ACM Sigweb Newsletter", 
+            "year": 2016
+        }, 
+        "31073443-1ff9-4764-a2b9-d2712869c962": {
+            "abstract": "Recurrent neural networks have recently been used for learning to describe images using natural language. However, it has been observed that these models generalize poorly to scenes that were not observed during training, possibly depending too strongly on the statistics of the text in the training data. Here we propose to describe images using short structured representations, aiming to capture the crux of a description. These structured representations allow us to tease-out and evaluate separately two types of generalization: standard generalization to new images with similar scenes, and generalization to new combinations of known entities. We compare two learning approaches on the MS-COCO dataset: a state-of-the-art recurrent network based on an LSTM (Show, Attend and Tell), and a simple structured prediction model on top of a deep network. We find that the structured model generalizes to new compositions substantially better than the LSTM, 7 times the accuracy of predicting structured representations. By providing a concrete method to quantify generalization for unseen combinations, we argue that structured representations and compositional splits are a useful benchmark for image captioning, and advocate compositional models that capture linguistic and visual structure.", 
+            "authors": [
+                "Yuval Atzmon", 
+                "Jonathan Berant", 
+                "Vahid Kezami", 
+                "Amir Globerson", 
+                "Gal Chechik"
+            ], 
+            "n_citation": 15, 
+            "title": "Learning to generalize to new compositions in image understanding", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "32fefbd4-7b19-4456-b76e-ed3268dbdead": {
+            "abstract": "Dense captioning is a newly emerging computer vision topic for understanding images with dense language descriptions. The goal is to densely detect visual concepts (e.g., objects, object parts, and interactions between them) from images, labeling each with a short descriptive phrase. We identify two key challenges of dense captioning that need to be properly addressed when tackling the problem. First, dense visual concept annotations in each image are associated with highly overlapping target regions, making accurate localization of each visual concept challenging. Second, the large amount of visual concepts makes it hard to recognize each of them by appearance alone. We propose a new model pipeline based on two novel ideas, joint inference and context fusion, to alleviate these two challenges. We design our model architecture in a methodical manner and thoroughly evaluate the variations in architecture. Our final model, compact and efficient, achieves state-of-the-art accuracy on Visual Genome for dense captioning with a relative gain of 73\\% compared to the previous best algorithm. Qualitative experiments also reveal the semantic capabilities of our model in dense captioning.", 
+            "authors": [
+                "Linjie Yang", 
+                "Kevin Tang", 
+                "Jianchao Yang", 
+                "Li-Jia Li"
+            ], 
+            "n_citation": 50, 
+            "title": "Dense Captioning with Joint Inference and Visual Context", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "36b0f729-fbab-44b1-ae3a-a28c63373b4e": {
+            "abstract": "Microtask crowdsourcing is increasingly critical to the creation of extremely large datasets. As a result, crowd workers spend weeks or months repeating the exact same tasks, making it necessary to understand their behavior over these long periods of time. We utilize three large, longitudinal datasets of nine million annotations collected from Amazon Mechanical Turk to examine claims that workers fatigue or satisfice over these long periods, producing lower quality work. We find that, contrary to these claims, workers are extremely stable in their quality over the entire period. To understand whether workers set their quality based on the task's requirements for acceptance, we then perform an experiment where we vary the required quality for a large crowdsourcing task. Workers did not adjust their quality based on the acceptance threshold: workers who were above the threshold continued working at their usual quality level, and workers below the threshold self-selected themselves out of the task. Capitalizing on this consistency, we demonstrate that it is possible to predict workers' long-term quality using just a glimpse of their quality on the first five tasks.", 
+            "authors": [
+                "Kenji Hata", 
+                "Ranjay Krishna", 
+                "Li Fei-Fei", 
+                "Michael S. Bernstein"
+            ], 
+            "n_citation": 50, 
+            "title": "A Glimpse Far into the Future: Understanding Long-term Crowd Worker Quality", 
+            "venue": "conference on computer supported cooperative work", 
+            "year": 2017
+        }, 
+        "3af3256d-b772-48f7-97eb-280a694a9a6b": {
+            "abstract": "A number of recent works have proposed attention models for Visual Question Answering (VQA) that generate spatial maps highlighting image regions relevant to answering the question. In this paper, we argue that in addition to modeling \"where to look\" or visual attention, it is equally important to model \"what words to listen to\" or question attention. We present a novel co-attention model for VQA that jointly reasons about image and question attention. In addition, our model reasons about the question (and consequently the image via the co-attention mechanism) in a hierarchical fashion via a novel 1-dimensional convolution neural networks (CNN). Our model improves the state-of-the-art on the VQA dataset from 60.3% to 60.5%, and from 61.6% to 63.3% on the COCO-QA dataset. By using ResNet, the performance is further improved to 62.1% for VQA and 65.4% for COCO-QA.", 
+            "authors": [
+                "Jiasen Lu", 
+                "Jianwei Yang", 
+                "Dhruv Batra", 
+                "Devi Parikh"
+            ], 
+            "n_citation": 164, 
+            "title": "Hierarchical Question-Image Co-Attention for Visual Question Answering", 
+            "venue": "neural information processing systems", 
+            "year": 2016
+        }, 
+        "3b2aa055-e18b-4285-aed3-9647825137a2": {
+            "abstract": "Visual relationships capture a wide variety of interactions between pairs of objects in images (e.g. \"man riding bicycle\" and \"man pushing bicycle\"). Consequently, the set of possible relationships is extremely large and it is difficult to obtain sufficient training examples for all possible relationships. Because of this limitation, previous work on visual relationship detection has concentrated on predicting only a handful of relationships. Though most relationships are infrequent, their objects (e.g. \"man\" and \"bicycle\") and predicates (e.g. \"riding\" and \"pushing\") independently occur more frequently. We propose a model that uses this insight to train visual models for objects and predicates individually and later combines them together to predict multiple relationships per image. We improve on prior work by leveraging language priors from semantic word embeddings to finetune the likelihood of a predicted relationship. Our model can scale to predict thousands of types of relationships from a few examples. Additionally, we localize the objects in the predicted relationships as bounding boxes in the image. We further demonstrate that understanding relationships can improve content based image retrieval.", 
+            "authors": [
+                "Cewu Lu", 
+                "Ranjay Krishna", 
+                "Michael S. Bernstein", 
+                "Li Fei-Fei"
+            ], 
+            "n_citation": 86, 
+            "title": "Visual Relationship Detection with Language Priors", 
+            "venue": "european conference on computer vision", 
+            "year": 2016
+        }, 
+        "3d87f4d2-1027-409e-bc07-8c037dc73566": {
+            "abstract": "Action classification in still images has been a popular research topic in computer vision. Labelling large scale datasets for action classification requires tremendous manual work, which is hard to scale up. Besides, the action categories in such datasets are pre-defined and vocabularies are fixed. However humans may describe the same action with different phrases, which leads to the difficulty of vocabulary expansion for traditional fully-supervised methods. We observe that large amounts of images with sentence descriptions are readily available on the Internet. The sentence descriptions can be regarded as weak labels for the images, which contain rich information and could be used to learn flexible expressions of action categories. We propose a method to learn an Action Concept Tree (ACT) and an Action Semantic Alignment (ASA) model for classification from image-description data via a two-stage learning process. A new dataset for the task of learning actions from descriptions is built. Experimental results show that our method outperforms several baseline methods significantly.", 
+            "authors": [
+                "Jiyang Gao", 
+                "Ram Nevatia"
+            ], 
+            "n_citation": 1, 
+            "title": "Learning Action Concept Trees and Semantic Alignment Networks from Image-Description Data", 
+            "venue": "asian conference on computer vision", 
+            "year": 2016
+        }, 
+        "3f6faf55-0637-42a0-a86a-6c6840ad9559": {
+            "abstract": "Automatic video captioning is challenging due to the complex interactions in dynamic real scenes. A comprehensive system would ultimately localize and track the objects, actions and interactions present in a video and generate a description that relies on temporal localization in order to ground the visual concepts. However, most existing automatic video captioning systems map from raw video data to high level textual description, bypassing localization and recognition, thus discarding potentially valuable information for content localization and generalization. In this work we present an automatic video captioning model that combines spatio-temporal attention and image classification by means of deep neural network structures based on long short-term memory. The resulting system is demonstrated to produce state-of-the-art results in the standard YouTube captioning benchmark while also offering the advantage of localizing the visual concepts (subjects, verbs, objects), with no grounding supervision, over space and time.", 
+            "authors": [
+                "Mihai Zanfir", 
+                "Elisabeta Marinoiu", 
+                "Cristian Sminchisescu"
+            ], 
+            "n_citation": 8, 
+            "title": "Spatio-Temporal Attention Models for Grounded Video Captioning", 
+            "venue": "asian conference on computer vision", 
+            "year": 2016
+        }, 
+        "3f7ddadc-f221-4dfc-88ef-31b0de97f0ef": {
+            "abstract": "There is considerable interest in the task of automatically generating image captions. However, evaluation is challenging. Existing automatic evaluation metrics are primarily sensitive to n-gram overlap, which is neither necessary nor sufficient for the task of simulating human judgment. We hypothesize that semantic propositional content is an important component of human caption evaluation, and propose a new automated caption evaluation metric defined over scene graphs coined SPICE. Extensive evaluations across a range of models and datasets indicate that SPICE captures human judgments over model-generated captions better than other automatic metrics (e.g., system-level correlation of 0.88 with human judgments on the MS COCO dataset, versus 0.43 for CIDEr and 0.53 for METEOR). Furthermore, SPICE can answer questions such as `which caption-generator best understands colors?' and `can caption-generators count?'", 
+            "authors": [
+                "Peter Anderson", 
+                "Basura Fernando", 
+                "Mark Johnson", 
+                "Stephen Gould"
+            ], 
+            "n_citation": 69, 
+            "title": "SPICE: Semantic Propositional Image Caption Evaluation", 
+            "venue": "european conference on computer vision", 
+            "year": 2016
+        }, 
+        "44f019d2-f9af-4ad9-84ca-f15c7dc6bcad": {
+            "abstract": "Image segmentation from referring expressions is a joint vision and language modeling task, where the input is an image and a textual expression describing a particular region in the image; and the goal is to localize and segment the specific image region based on the given expression. One major difficulty to train such language-based image segmentation systems is the lack of datasets with joint vision and text annotations. Although existing vision datasets such as MS COCO provide image captions, there are few datasets with region-level textual annotations for images, and these are often smaller in scale. In this paper, we explore how existing large scale vision-only and text-only datasets can be utilized to train models for image segmentation from referring expressions. We propose a method to address this problem, and show in experiments that our method can help this joint vision and language modeling task with vision-only and text-only data and outperforms previous results.", 
+            "authors": [
+                "Ronghang Hu", 
+                "Marcus Rohrbach", 
+                "Subhashini Venugopalan", 
+                "Trevor Darrell"
+            ], 
+            "n_citation": 2, 
+            "title": "Utilizing Large Scale Vision and Text Datasets for Image Segmentation from Referring Expressions", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "46459d6e-0744-445a-b640-051f05918d85": {
+            "abstract": "Humans have the remarkable capability to learn a large variety of visual concepts, often with very few examples, whereas current state-of-the-art vision algorithms require hundreds or thousands of examples per category and struggle with ambiguity. One characteristic that sets humans apart is our ability to acquire knowledge about the world and reason using this knowledge. This paper investigates the use of structured prior knowledge in the form of knowledge graphs and shows that using this knowledge improves performance on image classification. Specifically, we introduce the Graph Search Neural Network as a way of efficiently incorporating large knowledge graphs into a fully end-to-end learning system. We show in a number of experiments that our method outperforms baselines for multi-label classification, even under low data and few-shot settings.", 
+            "authors": [
+                "Kenneth Marino", 
+                "Ruslan Salakhutdinov", 
+                "Abhinav Gupta"
+            ], 
+            "n_citation": 50, 
+            "title": "The More You Know: Using Knowledge Graphs for Image Classification", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "556ecf97-59c0-4f1a-8c86-dbd3d891521f": {
+            "abstract": "Modeling textual or visual information with vector representations trained from large language or visual datasets has been successfully explored in recent years. However, tasks such as visual question answering require combining these vector representations with each other. Approaches to multimodal pooling include element-wise product or sum, as well as concatenation of the visual and textual representations. We hypothesize that these methods are not as expressive as an outer product of the visual and textual vectors. As the outer product is typically infeasible due to its high dimensionality, we instead propose utilizing Multimodal Compact Bilinear pooling (MCB) to efficiently and expressively combine multimodal features. We extensively evaluate MCB on the visual question answering and grounding tasks. We consistently show the benefit of MCB over ablations without MCB. For visual question answering, we present an architecture which uses MCB twice, once for predicting attention over spatial features and again to combine the attended representation with the question representation. This model outperforms the state-of-the-art on the Visual7W dataset and the VQA challenge.", 
+            "authors": [
+                "Akira Fukui", 
+                "Dong Huk Park", 
+                "Daylen Yang", 
+                "Anna Rohrbach", 
+                "Trevor Darrell", 
+                "Marcus Rohrbach"
+            ], 
+            "n_citation": 159, 
+            "title": "Multimodal Compact Bilinear Pooling for Visual Question Answering and Visual Grounding", 
+            "venue": "empirical methods in natural language processing", 
+            "year": 2016
+        }, 
+        "640ef070-8cd6-43ed-92e7-d707ea0ecfa2": {
+            "abstract": "Visual attention has been successfully applied in structural prediction tasks such as visual captioning and question answering. Existing visual attention models are generally spatial, i.e., the attention is modeled as spatial probabilities that re-weight the last conv-layer feature map of a CNN which encodes an input image. However, we argue that such spatial attention does not necessarily conform to the attention mechanism --- a dynamic feature extractor that combines contextual fixations over time, as CNN features are naturally spatial, channel-wise and multi-layer. In this paper, we introduce a novel convolutional neural network dubbed SCA-CNN that incorporates Spatial and Channel-wise Attentions in a CNN. In the task of image captioning, SCA-CNN dynamically modulates the sentence generation context in multi-layer feature maps, encoding where (i.e., attentive spatial locations at multiple layers) and what (i.e., attentive channels) the visual attention is. We evaluate the SCA-CNN architecture on three benchmark image captioning datasets: Flickr8K, Flickr30K, and MSCOCO. SCA-CNN achieves significant improvements over state-of-the-art visual attention-based image captioning methods.", 
+            "authors": [
+                "Long Chen", 
+                "Hanwang Zhang", 
+                "Jun Xiao", 
+                "Liqiang Nie", 
+                "Jian Shao", 
+                "Tat-Seng Chua"
+            ], 
+            "n_citation": 0, 
+            "title": "SCA-CNN: Spatial and Channel-wise Attention in Convolutional Networks for Image Captioning", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "6472989b-0386-4255-942e-ba70d3e1b0e2": {
+            "abstract": "Problems at the intersection of vision and language are of significant importance both as challenging research questions and for the rich set of applications they enable. However, inherent structure in our world and bias in our language tend to be a simpler signal for learning than visual modalities, resulting in models that ignore visual information, leading to an inflated sense of their capability. #R##N#We propose to counter these language priors for the task of Visual Question Answering (VQA) and make vision (the V in VQA) matter! Specifically, we balance the popular VQA dataset (Antol et al., ICCV 2015) by collecting complementary images such that every question in our balanced dataset is associated with not just a single image, but rather a pair of similar images that result in two different answers to the question. Our dataset is by construction more balanced than the original VQA dataset and has approximately twice the number of image-question pairs. Our complete balanced dataset will be publicly released as part of the 2nd iteration of the Visual Question Answering Challenge (VQA v2.0). #R##N#We further benchmark a number of state-of-art VQA models on our balanced dataset. All models perform significantly worse on our balanced dataset, suggesting that these models have indeed learned to exploit language priors. This finding provides the first concrete empirical evidence for what seems to be a qualitative sense among practitioners. #R##N#Finally, our data collection protocol for identifying complementary images enables us to develop a novel interpretable model, which in addition to providing an answer to the given (image, question) pair also provides a counter-example based explanation - specifically, it identifies an image that is similar to the original image, but it believes has a different answer to the same question. This can help in building trust for machines among their users.", 
+            "authors": [
+                "Yash Goyal", 
+                "Tejas Khot", 
+                "Douglas Summers-Stay", 
+                "Dhruv Batra", 
+                "Devi Parikh"
+            ], 
+            "n_citation": 50, 
+            "title": "Making the V in VQA Matter: Elevating the Role of Image Understanding in Visual Question Answering", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "6e2d2d78-1070-405d-a010-d560336be6ea": {
+            "abstract": "Integrating computer vision and natural language processing is a novel interdisciplinary field that has received a lot of attention recently. In this survey, we provide a comprehensive introduction of the integration of computer vision and natural language processing in multimedia and robotics applications with more than 200 key references. The tasks that we survey include visual attributes, image captioning, video captioning, visual question answering, visual retrieval, human-robot interaction, robotic actions, and robot navigation. We also emphasize strategies to integrate computer vision and natural language processing models as a unified theme of distributional semantics. We make an analog of distributional semantics in computer vision and natural language processing as image embedding and word embedding, respectively. We also present a unified view for the field and propose possible future directions.", 
+            "authors": [
+                "Peratham Wiriyathammabhum", 
+                "Douglas Summers-Stay", 
+                "Cornelia Fermüller", 
+                "Yiannis Aloimonos"
+            ], 
+            "n_citation": 0, 
+            "title": "Computer Vision and Natural Language Processing: Recent Approaches in Multimedia and Robotics", 
+            "venue": "ACM Computing Surveys", 
+            "year": 2017
+        }, 
+        "73e7c661-2426-43fa-8167-5162d72a81b0": {
+            "abstract": "Visual Question Answering (VQA) is a challenging task that has received increasing attention from both the computer vision and the natural language processing communities. Given an image and a question in natural language, it requires reasoning over visual elements of the image and general knowledge to infer the correct answer. In the first part of this survey, we examine the state of the art by comparing modern approaches to the problem. We classify methods by their mechanism to connect the visual and textual modalities. In particular, we examine the common approach of combining convolutional and recurrent neural networks to map images and questions to a common feature space. We also discuss memory-augmented and modular architectures that interface with structured knowledge bases. In the second part of this survey, we review the datasets available for training and evaluating VQA systems. The various datatsets contain questions at different levels of complexity, which require different capabilities and types of reasoning. We examine in depth the question/answer pairs from the Visual Genome project, and evaluate the relevance of the structured annotations of images with scene graphs for VQA. Finally, we discuss promising future directions for the field, in particular the connection to structured knowledge bases and the use of natural language processing models.", 
+            "authors": [
+                "Qi Wu", 
+                "Damien Teney", 
+                "Peng Wang", 
+                "Chunhua Shen", 
+                "Anthony R. Dick", 
+                "Anton van den Hengel"
+            ], 
+            "n_citation": 26, 
+            "title": "Visual Question Answering: A Survey of Methods and Datasets", 
+            "venue": "Computer Vision and Image Understanding", 
+            "year": 2017
+        }, 
+        "83511a34-a9b8-4626-9688-6215680bbacc": {
+            "abstract": "Large-scale annotated datasets allow AI systems to learn from and build upon the knowledge of the crowd. Many crowdsourcing techniques have been developed for collecting image annotations. These techniques often implicitly rely on the fact that a new input image takes a negligible amount of time to perceive. In contrast, we investigate and determine the most cost-effective way of obtaining high-quality multi-label annotations for temporal data such as videos. Watching even a short 30-second video clip requires a significant time investment from a crowd worker; thus, requesting multiple annotations following a single viewing is an important cost-saving strategy. But how many questions should we ask per video? We conclude that the optimal strategy is to ask as many questions as possible in a HIT (up to 52 binary questions after watching a 30-second video clip in our experiments).We demonstrate that while workers may not correctly answer all questions, the cost-benefit analysis nevertheless favors consensus from multiple such cheap-yet-imperfect iterations over more complex alternatives. When compared with a one-question-per-video baseline, our method is able to achieve a 10% improvement in recall (76.7% ours versus 66.7% baseline) at comparable precision (83.8% ours versus 83.0% baseline) in about half the annotation time (3.8 minutes ours compared to 7.1 minutes baseline). We demonstrate the effectiveness of our method by collecting multi-label annotations of 157 human activities on 1,815 videos.", 
+            "authors": [
+                "Gunnar A. Sigurdsson", 
+                "Olga Russakovsky", 
+                "Ali Farhadi", 
+                "Ivan Laptev", 
+                "Abhinav Gupta"
+            ], 
+            "n_citation": 7, 
+            "title": "Much Ado About Time: Exhaustive Annotation of Temporal Data", 
+            "venue": "national conference on artificial intelligence", 
+            "year": 2016
+        }, 
+        "886693b9-7379-4ba1-94bb-f9cc17336a5b": {
+            "abstract": "We have seen great progress in basic perceptual tasks such as object recognition and detection. However, AI models still fail to match humans in high-level vision tasks due to the lack of capacities for deeper reasoning. Recently the new task of visual question answering (QA) has been proposed to evaluate a model's capacity for deep image understanding. Previous works have established a loose, global association between QA sentences and images. However, many questions and answers, in practice, relate to local regions in the images. We establish a semantic link between textual descriptions and image regions by object-level grounding. It enables a new type of QA with visual answers, in addition to textual answers used in previous work. We study the visual QA tasks in a grounded setting with a large collection of 7W multiple-choice QA pairs. Furthermore, we evaluate human performance and several baseline models on the QA tasks. Finally, we propose a novel LSTM model with spatial attention to tackle the 7W QA tasks.", 
+            "authors": [
+                "Yuke Zhu", 
+                "Oliver Groth", 
+                "Michael S. Bernstein", 
+                "Li Fei-Fei"
+            ], 
+            "n_citation": 70, 
+            "title": "Visual7W: Grounded Question Answering in Images", 
+            "venue": "computer vision and pattern recognition", 
+            "year": 2016
+        }, 
+        "95047b1e-80e3-4e4f-8791-71475de16c2b": {
+            "abstract": "Rapid development of robots and autonomous vehicles requires semantic information about the surrounding scene to decide upon the correct action or to be able to complete particular tasks. Scene understanding provides the necessary semantic interpretation by semantic scene graphs. For this task, so-called support relationships which describe the contextual relations between parts of the scene such as floor, wall, table, etc, need be known. This paper presents a novel approach to infer such relations and then to construct the scene graph. Support relations are estimated by considering important, previously ignored information: the physical stability and the prior support knowledge between object classes. In contrast to previous methods for extracting support relations, the proposed approach generates more accurate results, and does not require a pixel-wise semantic labeling of the scene. The semantic scene graph which describes all the contextual relations within the scene is constructed using this information. To evaluate the accuracy of these graphs, multiple different measures are formulated. The proposed algorithms are evaluated using the NYUv2 database. The results demonstrate that the inferred support relations are more precise than state-of-the-art. The scene graphs are compared against ground truth graphs.", 
+            "authors": [
+                "Michael Ying Yang", 
+                "Wentong Liao", 
+                "Hanno Ackermann", 
+                "Bodo Rosenhahn"
+            ], 
+            "n_citation": 2, 
+            "title": "On Support Relations and Semantic Scene Graphs", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "a1e8fc39-499e-49d0-8f7d-443ea3c84f93": {
+            "abstract": "Common visual recognition tasks such as classification, object detection, and semantic segmentation are rapidly reaching maturity, and given the recent rate of progress, it is not unreasonable to conjecture that techniques for many of these problems will approach human levels of performance in the next few years. In this paper we look to the future: what is the next frontier in visual recognition? #R##N#We offer one possible answer to this question. We propose a detailed image annotation that captures information beyond the visible pixels and requires complex reasoning about full scene structure. Specifically, we create an amodal segmentation of each image: the full extent of each region is marked, not just the visible pixels. Annotators outline and name all salient regions in the image and specify a partial depth order. The result is a rich scene structure, including visible and occluded portions of each region, figure-ground edge information, semantic labels, and object overlap. #R##N#To date, we have labeled 500 images in the BSDS dataset with at least five annotators per image. Critically, the resulting full scene annotation is surprisingly consistent between annotators. For example, for edge detection our annotations have substantially higher human consistency than the original BSDS edges while providing a greater challenge for existing algorithms. We are currently annotating ~5000 images from the MS COCO dataset.", 
+            "authors": [
+                "Yan Zhu", 
+                "Yuandong Tian", 
+                "Dimitris Mexatas", 
+                "Piotr Dollár"
+            ], 
+            "n_citation": 12, 
+            "title": "Semantic Amodal Segmentation", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2015
+        }, 
+        "a3e167b7-591b-4d8f-8e5d-ed90da1ab2da": {
+            "abstract": "Part of the appeal of Visual Question Answering (VQA) is its promise to answer new questions about previously unseen images. Most current methods demand training questions that illustrate every possible concept, and will therefore never achieve this capability, since the volume of required training data would be prohibitive. Answering general questions about images requires methods capable of Zero-Shot VQA, that is, methods able to answer questions beyond the scope of the training questions. We propose a new evaluation protocol for VQA methods which measures their ability to perform Zero-Shot VQA, and in doing so highlights significant practical deficiencies of current approaches, some of which are masked by the biases in current datasets. We propose and evaluate several strategies for achieving Zero-Shot VQA, including methods based on pretrained word embeddings, object classifiers with semantic embeddings, and test-time retrieval of example images. Our extensive experiments are intended to serve as baselines for Zero-Shot VQA, and they also achieve state-of-the-art performance in the standard VQA evaluation setting.", 
+            "authors": [
+                "Damien Teney", 
+                "Anton van den Hengel"
+            ], 
+            "n_citation": 50, 
+            "title": "Zero-Shot Visual Question Answering", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "a4078362-2556-4957-a995-f163242c8982": {
+            "abstract": "Classes in natural images tend to follow long tail distributions. This is problematic when there are insufficient training examples for rare classes. This effect is emphasized in compound classes, involving the conjunction of several concepts, such as those appearing in action-recognition datasets. In this paper, we propose to address this issue by learning how to utilize common visual concepts which are readily available. We detect the presence of prominent concepts in images and use them to infer the target labels instead of using visual features directly, combining tools from vision and natural-language processing. We validate our method on the recently introduced HICO dataset reaching a mAP of 31.54% and on the Stanford40 Actions dataset, where the proposed method outperforms current state-of-the art and, combined with direct visual features, obtains an accuracy 83.12%. Moreover, the method provides for each class a semantically meaningful list of keywords and relevant image regions relating it to its constituent concepts.", 
+            "authors": [
+                "Amir Rosenfeld", 
+                "Shimon Ullman"
+            ], 
+            "n_citation": 0, 
+            "title": "Action Classification via Concepts and Attributes", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "a4c5b9ee-a280-4046-8d95-1d5eaeb471ee": {
+            "abstract": "We propose a method that can generate an unambiguous description (known as a referring expression) of a specific object or region in an image, and which can also comprehend or interpret such an expression to infer which object is being described. We show that our method outperforms previous methods that generate descriptions of objects without taking into account other potentially ambiguous objects in the scene. Our model is inspired by recent successes of deep learning methods for image captioning, but while image captioning is difficult to evaluate, our task allows for easy objective evaluation. We also present a new large-scale dataset for referring expressions, based on MSCOCO. We have released the dataset and a toolbox for visualization and evaluation, see https://github.com/ mjhucla/Google_Refexp_toolbox.", 
+            "authors": [
+                "Junhua Mao", 
+                "Jonathan Huang", 
+                "Alexander Toshev", 
+                "Oana Camburu", 
+                "Alan L. Yuille", 
+                "Kevin P. Murphy"
+            ], 
+            "n_citation": 50, 
+            "title": "Generation and Comprehension of Unambiguous Object Descriptions", 
+            "venue": "computer vision and pattern recognition", 
+            "year": 2016
+        }, 
+        "ad95e239-40e5-4cb4-9f42-df6c05c92d66": {
+            "abstract": "Large labeled training sets are the critical building blocks of supervised learning methods and are key enablers of deep learning techniques. For some applications, creating labeled training sets is the most time-consuming and expensive part of applying machine learning. We therefore propose a paradigm for the programmatic creation of training sets called data programming in which users provide a set of labeling functions, which are programs that heuristically label subsets of the data, but that are noisy and may conflict. By viewing these labeling functions as implicitly describing a generative model for this noise, we show that we can recover the parameters of this model to \"denoise\" the generated training set, and establish theoretically that we can recover the parameters of these generative models in a handful of settings. We then show how to modify a discriminative loss function to make it noise-aware, and demonstrate our method over a range of discriminative models including logistic regression and LSTMs. Experimentally, on the 2014 TAC-KBP Slot Filling challenge, we show that data programming would have led to a new winning score, and also show that applying data programming to an LSTM model leads to a TAC-KBP score almost 6 F1 points over a state-of-the-art LSTM baseline (and into second place in the competition). Additionally, in initial user studies we observed that data programming may be an easier way for non-experts to create machine learning models when training data is limited or unavailable.", 
+            "authors": [
+                "Alexander Ratner", 
+                "Christopher De Sa", 
+                "Sen Wu", 
+                "Daniel Selsam", 
+                "Christopher Ré"
+            ], 
+            "n_citation": 47, 
+            "title": "Data Programming: Creating Large Training Sets, Quickly", 
+            "venue": "neural information processing systems", 
+            "year": 2016
+        }, 
+        "b56ad40d-6d5a-42c3-bd8e-a191ceaca466": {
+            "abstract": "Action classification in still images is an important task in computer vision. It is challenging as the appearances of actions may vary depending on their context (e.g. associated objects). Manually labeling of context information would be time consuming and difficult to scale up. To address this challenge, we propose a method to automatically discover and cluster action concepts, and learn their classifiers from weakly supervised image-sentence corpora. It obtains candidate action concepts by extracting verb-object pairs from sentences and verifies their visualness with the associated images. Candidate action concepts are then clustered by using a multi-modal representation with image embeddings from deep convolutional networks and text embeddings from word2vec. More than one hundred human action concept classifiers are learned from the Flickr 30k dataset with no additional human effort and promising classification results are obtained. We further apply the AdaBoost algorithm to automatically select and combine relevant action concepts given an action query. Promising results have been shown on the PASCAL VOC 2012 action classification benchmark, which has zero overlap with Flickr30k.", 
+            "authors": [
+                "Jiyang Gao", 
+                "Chen Sun", 
+                "Ram Nevatia"
+            ], 
+            "n_citation": 4, 
+            "title": "ACD: Action Concept Discovery from Image-Sentence Corpora", 
+            "venue": "international conference on multimedia retrieval", 
+            "year": 2016
+        }, 
+        "b8913204-c31e-4e97-a7d5-421e2c817999": {
+            "abstract": "Visual question answering (VQA) is an interesting learning setting for evaluating the abilities and shortcomings of current systems for image understanding. Many of the recently proposed VQA systems include attention or memory mechanisms designed to support \"reasoning\". For multiple-choice VQA, nearly all of these systems train a multi-class classifier on image and question features to predict an answer. This paper questions the value of these common practices and develops a simple alternative model based on binary classification. Instead of treating answers as competing choices, our model receives the answer as input and predicts whether or not an image-question-answer triplet is correct. We evaluate our model on the Visual7W Telling and the VQA Real Multiple Choice tasks, and find that even simple versions of our model perform competitively. Our best model achieves state-of-the-art performance on the Visual7W Telling task and compares surprisingly well with the most complex systems proposed for the VQA Real Multiple Choice task. We explore variants of the model and study its transferability between both datasets. We also present an error analysis of our model that suggests a key problem of current VQA systems lies in the lack of visual grounding of concepts that occur in the questions and answers. Overall, our results suggest that the performance of current VQA systems is not significantly better than that of systems designed to exploit dataset biases.", 
+            "authors": [
+                "Allan Jabri", 
+                "Armand Joulin", 
+                "Laurens van der Maaten"
+            ], 
+            "n_citation": 38, 
+            "title": "Revisiting Visual Question Answering Baselines", 
+            "venue": "european conference on computer vision", 
+            "year": 2016
+        }, 
+        "bbf59d98-cc1d-44a0-8c1e-1f6ae08c573c": {
+            "abstract": "Visual Question Answering (VQA) has attracted a lot of attention in both Computer Vision and Natural Language Processing communities, not least because it offers insight into the relationships between two important sources of information. Current datasets, and the models built upon them, have focused on questions which are answerable by direct analysis of the question and image alone. The set of such questions that require no external information to answer is interesting, but very limited. It excludes questions which require common sense, or basic factual knowledge to answer, for example. Here we introduce FVQA, a VQA dataset which requires, and supports, much deeper reasoning. FVQA only contains questions which require external information to answer. #R##N#We thus extend a conventional visual question answering dataset, which contains image-question-answerg triplets, through additional image-question-answer-supporting fact tuples. The supporting fact is represented as a structural triplet, such as  . #R##N#We evaluate several baseline models on the FVQA dataset, and describe a novel model which is capable of reasoning about an image on the basis of supporting facts.", 
+            "authors": [
+                "Peng Wang", 
+                "Qi Wu", 
+                "Chunhua Shen", 
+                "Anton van den Hengel", 
+                "Anthony R. Dick"
+            ], 
+            "n_citation": 13, 
+            "title": "FVQA: Fact-based Visual Question Answering", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "c995f197-8908-4eb6-9667-8a3871c0be51": {
+            "abstract": "Visual Question Answering (VQA) is a recent problem in computer vision and natural language processing that has garnered a large amount of interest from the deep learning, computer vision, and natural language processing communities. In VQA, an algorithm needs to answer text-based questions about images. Since the release of the first VQA dataset in 2014, several additional datasets have been released and many algorithms have been proposed. In this review, we critically examine the current state of VQA in terms of problem formulation, existing datasets, evaluation metrics, and algorithms. In particular, we discuss the limitations of current datasets with regard to their ability to properly train and assess VQA algorithms. We then exhaustively review existing algorithms for VQA. Finally, we discuss possible future directions for VQA and image understanding research.", 
+            "authors": [
+                "Kushal Kafle", 
+                "Christopher Kanan"
+            ], 
+            "n_citation": 4, 
+            "title": "Visual Question Answering: Datasets, Algorithms, and Future Challenges", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "d148a072-9e36-41bb-831a-8ac4e7160a24": {
+            "abstract": "This paper proposes to improve visual question answering (VQA) with structured representations of both scene contents and questions. A key challenge in VQA is to require joint reasoning over the visual and text domains. The predominant CNN/LSTM-based approach to VQA is limited by monolithic vector representations that largely ignore structure in the scene and in the form of the question. CNN feature vectors cannot effectively capture situations as simple as multiple object instances, and LSTMs process questions as series of words, which does not reflect the true complexity of language structure. We instead propose to build graphs over the scene objects and over the question words, and we describe a deep neural network that exploits the structure in these representations. This shows significant benefit over the sequential processing of LSTMs. The overall efficacy of our approach is demonstrated by significant improvements over the state-of-the-art, from 71.2% to 74.4% in accuracy on the \"abstract scenes\" multiple-choice benchmark, and from 34.7% to 39.1% in accuracy over pairs of \"balanced\" scenes, i.e. images with fine-grained differences and opposite yes/no answers to a same question.", 
+            "authors": [
+                "Damien Teney", 
+                "Lingqiao Liu", 
+                "Anton van den Hengel"
+            ], 
+            "n_citation": 10, 
+            "title": "Graph-Structured Representations for Visual Question Answering", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "d525bcf8-b023-4c7c-9e41-d332c414b07f": {
+            "abstract": "Spatial relationships between objects provide important information for text-based image retrieval. As users are more likely to describe a scene from a real world perspective, using 3D spatial relationships rather than 2D relationships that assume a particular viewing direction, one of the main challenges is to infer the 3D structure that bridges images with users' text descriptions. However, direct inference of 3D structure from images requires learning from large scale annotated data. Since interactions between objects can be reduced to a limited set of atomic spatial relations in 3D, we study the possibility of inferring 3D structure from a text description rather than an image, applying physical relation models to synthesize holistic 3D abstract object layouts satisfying the spatial constraints present in a textual description. We present a generic framework for retrieving images from a textual description of a scene by matching images with these generated abstract object layouts. Images are ranked by matching object detection outputs (bounding boxes) to 2D layout candidates (also represented by bounding boxes) which are obtained by projecting the 3D scenes with sampled camera directions. We validate our approach using public indoor scene datasets and show that our method outperforms an object occurrence based and a learned 2D pairwise relation based baselines.", 
+            "authors": [
+                "Ang Li", 
+                "Jin Sun", 
+                "Joe Yue-Hei Ng", 
+                "Ruichi Yu", 
+                "Vlad I. Morariu", 
+                "Larry S. Davis"
+            ], 
+            "n_citation": 0, 
+            "title": "Generating Holistic 3D Scene Abstractions for Text-based Image Retrieval", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "d96ed4ad-3f74-46b5-bb8d-1d3be6a8838f": {
+            "abstract": "Convolutional neural networks (CNN) pre-trained on ImageNet are the backbone of most state-of-the-art approaches. In this paper, we present a new set of pre-trained models with popular state-of-the-art architectures for the Caffe framework. The first release includes Residual Networks (ResNets) with generation script as well as the batch-normalization-variants of AlexNet and VGG19. All models outperform previous models with the same architecture. The models and training code are available at this http URL and this https URL", 
+            "authors": [
+                "Marcel Simon", 
+                "Erik Rodner", 
+                "Joachim Denzler"
+            ], 
+            "n_citation": 50, 
+            "title": "ImageNet pre-trained models with batch normalization", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "da9bead5-701d-443c-b547-761a03a8d7c3": {
+            "abstract": "When building artificial intelligence systems that can reason and answer questions about visual data, we need diagnostic tests to analyze our progress and discover shortcomings. Existing benchmarks for visual question answering can help, but have strong biases that models can exploit to correctly answer questions without reasoning. They also conflate multiple sources of error, making it hard to pinpoint model weaknesses. We present a diagnostic dataset that tests a range of visual reasoning abilities. It contains minimal biases and has detailed annotations describing the kind of reasoning each question requires. We use this dataset to analyze a variety of modern visual reasoning systems, providing novel insights into their abilities and limitations.", 
+            "authors": [
+                "Justin Johnson", 
+                "Bharath Hariharan", 
+                "Laurens van der Maaten", 
+                "Li Fei-Fei", 
+                "C. Lawrence Zitnick", 
+                "Ross B. Girshick"
+            ], 
+            "n_citation": 50, 
+            "title": "CLEVR: A Diagnostic Dataset for Compositional Language and Elementary Visual Reasoning", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "e8717fef-ce06-4038-86e4-1f73458153a9": {
+            "abstract": "Referring expressions usually describe an object using properties of the object and relationships of the object with other objects. We propose a technique that integrates context between objects to understand referring expressions. Our approach uses an LSTM to learn the probability of a referring expression, with input features from a region and a context region. The context regions are discovered using multiple-instance learning (MIL) since annotations for context objects are generally not available for training. We utilize max-margin based MIL objective functions for training the LSTM. Experiments on the Google RefExp and UNC RefExp datasets show that modeling context between objects provides better performance than modeling only object properties. We also qualitatively show that our technique can ground a referring expression to its referred region along with the supporting context region.", 
+            "authors": [
+                "Varun K. Nagaraja", 
+                "Vlad I. Morariu", 
+                "Larry S. Davis"
+            ], 
+            "n_citation": 35, 
+            "title": "Modeling Context Between Objects for Referring Expression Understanding", 
+            "venue": "european conference on computer vision", 
+            "year": 2016
+        }, 
+        "e882cf41-83a1-43c3-803e-d4570f0b4922": {
+            "abstract": "We propose a novel attention network, which accurately attends to target objects of various scales and shapes in images through multiple stages. The proposed network enables multiple layers to estimate attention in a convolutional neural network (CNN). The hierarchical attention model gradually suppresses irrelevant regions in an input image using a progressive attentive process over multiple CNN layers. The attentive process in each layer determines whether to pass or suppress feature maps for use in the next convolution. We employ local contexts to estimate attention probability at each location since it is difficult to infer accurate attention by observing a feature vector from a single location only. The experiments on synthetic and real datasets show that the proposed attention network outperforms traditional attention methods in various attribute prediction tasks.", 
+            "authors": [
+                "Paul Hongsuck Seo", 
+                "Zhe Lin", 
+                "Scott Cohen", 
+                "Xiaohui Shen", 
+                "Bohyung Han"
+            ], 
+            "n_citation": 7, 
+            "title": "Hierarchical Attention Networks", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "ea441a4e-66ca-47db-87e1-eb0776ae3a3d": {
+            "abstract": "Understanding a visual scene goes beyond recognizing individual objects in isolation. Relationships between objects also constitute rich semantic information about the scene. In this work, we explicitly model the objects and their relationships using scene graphs, a visually-grounded graphical structure of an image. We propose a novel end-to-end model that generates such structured scene representation from an input image. The model solves the scene graph inference problem using standard RNNs and learns to iteratively improves its predictions via message passing. Our joint inference model can take advantage of contextual cues to make better predictions on objects and their relationships. The experiments show that our model significantly outperforms previous methods on generating scene graphs using Visual Genome dataset and inferring support relations with NYU Depth v2 dataset.", 
+            "authors": [
+                "D. Xu", 
+                "Yuke Zhu", 
+                "Christopher Bongsoo Choy", 
+                "Li Fei-Fei"
+            ], 
+            "file_url": "https://arxiv.org/pdf/1701.02426", 
+            "n_citation": 50, 
+            "title": "Scene Graph Generation by Iterative Message Passing", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2017
+        }, 
+        "ef4d5017-13f4-4f10-b3fb-c537b9b361f6": {
+            "abstract": "Traditional image tagging and retrieval algorithms have limited value as a result of being trained with heavily curated datasets. These limitations are most evident when arbitrary search words are used that do not intersect with training set labels. Weak labels from user generated content (UGC) found in the wild (e.g., Google Photos, FlickR, etc.) have an almost unlimited number of unique words in the metadata tags. Prior work on word embeddings successfully leveraged unstructured text with large vocabularies, and our proposed method seeks to apply similar cost functions to open source imagery. Specifically, we train a deep learning image tagging and retrieval system on large scale, user generated content (UGC) using sampling methods and joint optimization of word embeddings. By using the Yahoo! FlickR Creative Commons (YFCC100M) dataset, such an approach builds robustness to common unstructured data issues that include but are not limited to irrelevant tags, misspellings, multiple languages, polysemy, and tag imbalance. As a result, the final proposed algorithm will not only yield comparable results to state of the art in conventional image tagging, but will enable new capability to train algorithms on large, scale unstructured text in the YFCC100M dataset and outperform cited work in zero-shot capability.", 
+            "authors": [
+                "Karl Ni", 
+                "Kyle Zaragoza", 
+                "Carmen J. Carrano", 
+                "Barry Y. Chen", 
+                "Yonas Gebeyehu Tesfaye", 
+                "Alexander Gude"
+            ], 
+            "n_citation": 0, 
+            "title": "Sampled Image Tagging and Retrieval Methods on User Generated Content", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "f1b18d0d-2c37-4e14-805e-491dccf448e6": {
+            "abstract": "We address a question answering task on real-world images that is set up as a Visual Turing Test. By combining latest advances in image representation and natural language processing, we propose Ask Your Neurons, a scalable, jointly trained, end-to-end formulation to this problem. #R##N#In contrast to previous efforts, we are facing a multi-modal problem where the language output (answer) is conditioned on visual and natural language inputs (image and question). We provide additional insights into the problem by analyzing how much information is contained only in the language part for which we provide a new human baseline. To study human consensus, which is related to the ambiguities inherent in this challenging task, we propose two novel metrics and collect additional answers which extend the original DAQUAR dataset to DAQUAR-Consensus. #R##N#Moreover, we also extend our analysis to VQA, a large-scale question answering about images dataset, where we investigate some particular design choices and show the importance of stronger visual models. At the same time, we achieve strong performance of our model that still uses a global image representation. Finally, based on such analysis, we refine our Ask Your Neurons on DAQUAR, which also leads to a better performance on this challenging task.", 
+            "authors": [
+                "Mateusz Malinowski", 
+                "Marcus Rohrbach", 
+                "Mario Fritz"
+            ], 
+            "n_citation": 17, 
+            "title": "Ask Your Neurons: A Deep Learning Approach to Visual Question Answering", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2016
+        }, 
+        "fd3b6e0e-9593-4407-9be5-91485a08082f": {
+            "abstract": "Textual data such as tags, sentence descriptions are combined with visual cues to reduce the semantic gap for image retrieval applications in today's Multimodal Image Retrieval (MIR) systems. However, all tags are treated as equally important in these systems, which may result in misalignment between visual and textual modalities during MIR training. This will further lead to degenerated retrieval performance at query time. To address this issue, we investigate the problem of tag importance prediction, where the goal is to automatically predict the tag importance and use it in image retrieval. To achieve this, we first propose a method to measure the relative importance of object and scene tags from image sentence descriptions. Using this as the ground truth, we present a tag importance prediction model to jointly exploit visual, semantic and context cues. The Structural Support Vector Machine (SSVM) formulation is adopted to ensure efficient training of the prediction model. Then, the Canonical Correlation Analysis (CCA) is employed to learn the relation between the image visual feature and tag importance to obtain robust retrieval performance. Experimental results on three real-world datasets show a significant performance improvement of the proposed MIR with Tag Importance Prediction (MIR/TIP) system over other MIR systems.", 
+            "authors": [
+                "Shangwen Li", 
+                "Sanjay Purushotham", 
+                "Chen Chen", 
+                "Yuzhuo Ren", 
+                "C.-C. Jay Kuo"
+            ], 
+            "n_citation": 0, 
+            "title": "Measuring and Predicting Tag Importance for Image Retrieval", 
+            "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence", 
+            "year": 2017
+        }
+    }, 
+    "file_url": "https://arxiv.org/pdf/1602.07332", 
+    "id": "3f459840-bb34-48f6-a1ec-d4d3d4fd28cb", 
+    "n_citation": 100, 
+    "references": {
+        "02e2ce02-467b-402f-b3d6-d1a109df125a": {
+            "abstract": "Common sense is essential for building intelligent machines. While some commonsense knowledge is explicitly stated in human-generated text and can be learnt by mining the web, much of it is unwritten. It is often unnecessary and even unnatural to write about commonsense facts. While unwritten, this commonsense knowledge is not unseen! The visual world around us is full of structure modeled by commonsense knowledge. Can machines learn common sense simply by observing our visual world? Unfortunately, this requires automatic and accurate detection of objects, their attributes, poses, and interactions between objects, which remain challenging problems. Our key insight is that while visual common sense is depicted in visual content, it is the semantic features that are relevant and not low-level pixel information. In other words, photorealism is not necessary to learn common sense. We explore the use of human-generated abstract scenes made from clipart for learning common sense. In particular, we reason about the plausibility of an interaction or relation between a pair of nouns by measuring the similarity of the relation and nouns with other relations and nouns we have seen in abstract scenes. We show that the commonsense knowledge we learn is complementary to what can be learnt from sources of text.", 
+            "authors": [
+                "Ramakrishna Vedantam", 
+                "Xiao Lin", 
+                "Tanmay Batra", 
+                "C. Lawrence Zitnick", 
+                "Devi Parikh"
+            ], 
+            "n_citation": 39, 
+            "title": "Learning Common Sense through Visual Abstraction", 
+            "venue": "international conference on computer vision", 
+            "year": 2015
+        }, 
+        "19b1da27-772e-4981-97ad-49dfb3d0c28e": {
+            "abstract": "This publicly available curated dataset of almost 100 million photos and videos is free and legal for all.", 
+            "authors": [
+                "Bart Thomee", 
+                "David A. Shamma", 
+                "Gerald Friedland", 
+                "Benjamin Elizalde", 
+                "Karl Ni", 
+                "Douglas Poland", 
+                "Damian Borth", 
+                "Li-Jia Li"
+            ], 
+            "file_url": "https://arxiv.org/pdf/1503.01817", 
+            "n_citation": 444, 
+            "title": "YFCC100M: the new data in multimedia research", 
+            "venue": "Communications of The ACM", 
+            "year": 2016
+        }, 
+        "1cc78414-8300-431a-9a2a-d51b81cdb520": {
+            "abstract": "The skills and knowledge that earn promotions are not always enough to ensure success in the new position.", 
+            "authors": [
+                "Leon A. Kappelman", 
+                "Mary C. Jones", 
+                "Vess Johnson", 
+                "Ephraim R. McLean", 
+                "Kittipong Boonme"
+            ], 
+            "n_citation": 14, 
+            "title": "Skills for success at different stages of an IT professional's career", 
+            "venue": "Communications of The ACM", 
+            "year": 2016
+        }, 
+        "2a4c74f6-7356-4e2b-b033-bd1aed30d669": {
+            "abstract": "The state-of-the-art methods used for relation classification are primarily based on statistical machine learning, and their performance strongly depends on the quality of the extracted features. The extracted features are often derived from the output of pre-existing natural language processing (NLP) systems, which leads to the propagation of the errors in the existing tools and hinders the performance of these systems. In this paper, we exploit a convolutional deep neural network (DNN) to extract lexical and sentence level features. Our method takes all of the word tokens as input without complicated pre-processing. First, the word tokens are transformed to vectors by looking up word embeddings 1 . Then, lexical level features are extracted according to the given nouns. Meanwhile, sentence level features are learned using a convolutional approach. These two level features are concatenated to form the final extracted feature vector. Finally, the features are fed into a softmax classifier to predict the relationship between two marked nouns. The experimental results demonstrate that our approach significantly outperforms the state-of-the-art methods.", 
+            "authors": [
+                "Daojian Zeng", 
+                "Kang Liu", 
+                "Siwei Lai", 
+                "Guangyou Zhou", 
+                "Jun Zhao"
+            ], 
+            "n_citation": 302, 
+            "title": "Relation Classification via Convolutional Deep Neural Network", 
+            "venue": "international conference on computational linguistics", 
+            "year": 2014
+        }, 
+        "542de443-0763-4cd3-93d1-ab8cace0afe0": {
+            "abstract": "We extend previous work on tree kernels to estimate the similarity between the dependency trees of sentences. Using this kernel within a Support Vector Machine, we detect and classify relations between entities in the Automatic Content Extraction (ACE) corpus of news articles. We examine the utility of different features such as Wordnet hypernyms, parts of speech, and entity types, and find that the dependency tree kernel achieves a 20% F1 improvement over a \"bag-of-words\" kernel.", 
+            "authors": [
+                "Aron Culotta", 
+                "Jeffrey S. Sorensen"
+            ], 
+            "n_citation": 774, 
+            "title": "Dependency Tree Kernels for Relation Extraction", 
+            "venue": "meeting of the association for computational linguistics", 
+            "year": 2004
+        }, 
+        "5cf21bc5-1d26-4705-9b59-0a6200928a9f": {
+            "abstract": "We describe the design and use of the Stanford CoreNLP toolkit, an extensible pipeline that provides core natural language analysis. This toolkit is quite widely used, both in the research NLP community and also among commercial and government users of open source NLP technology. We suggest that this follows from a simple, approachable design, straightforward interfaces, the inclusion of robust and good quality analysis components, and not requiring use of a large amount of associated baggage.", 
+            "authors": [
+                "Christopher D. Manning", 
+                "Mihai Surdeanu", 
+                "John Bauer", 
+                "Jenny Rose Finkel", 
+                "Steven Bethard", 
+                "David McClosky"
+            ], 
+            "n_citation": 2273, 
+            "title": "The Stanford CoreNLP Natural Language Processing Toolkit", 
+            "venue": "meeting of the association for computational linguistics", 
+            "year": 2014
+        }, 
+        "64048b91-680a-450f-a90d-a61f35cc8062": {
+            "abstract": "We present a probabilistic generative model of visual attributes, together with an efficient learning algorithm. Attributes are visual qualities of objects, such as 'red', 'striped', or 'spotted'. The model sees attributes as patterns of image segments, repeatedly sharing some characteristic properties. These can be any combination of appearance, shape, or the layout of segments within the pattern. Moreover, attributes with general appearance are taken into account, such as the pattern of alternation of any two colors which is characteristic for stripes. To enable learning from unsegmented training images, the model is learnt discriminatively, by optimizing a likelihood ratio.#R##N##R##N#As demonstrated in the experimental evaluation, our model can learn in a weakly supervised setting and encompasses a broad range of attributes. We show that attributes can be learnt starting from a text query to Google image search, and can then be used to recognize the attribute and determine its spatial extent in novel real-world images.", 
+            "authors": [
+                "Vittorio Ferrari", 
+                "Andrew Zisserman"
+            ], 
+            "n_citation": 323, 
+            "title": "Learning Visual Attributes", 
+            "venue": "neural information processing systems", 
+            "year": 2008
+        }, 
+        "64c51e42-80ec-4185-98dd-e3e3f7416145": {
+            "abstract": "We present \\textit{AutoExtend}, a system to learn embeddings for synsets and lexemes. It is flexible in that it can take any word embeddings as input and does not need an additional training corpus. The synset/lexeme embeddings obtained live in the same vector space as the word embeddings. A sparse tensor formalization guarantees efficiency and parallelizability. We use WordNet as a lexical resource, but AutoExtend can be easily applied to other resources like Freebase. AutoExtend achieves state-of-the-art performance on word similarity and word sense disambiguation tasks.", 
+            "authors": [
+                "Sascha Rothe", 
+                "Hinrich Schütze"
+            ], 
+            "n_citation": 27, 
+            "title": "AutoExtend: Extending Word Embeddings to Embeddings for Synsets and Lexemes", 
+            "venue": "meeting of the association for computational linguistics", 
+            "year": 2015
+        }, 
+        "64f188d9-d5d1-49de-803e-ba727af018af": {
+            "abstract": "Microtask crowdsourcing has enabled dataset advances in social science and machine learning, but existing crowdsourcing schemes are too expensive to scale up with the expanding volume of data. To scale and widen the applicability of crowdsourcing, we present a technique that produces extremely rapid judgments for binary and categorical labels. Rather than punishing all errors, which causes workers to proceed slowly and deliberately, our technique speeds up workers' judgments to the point where errors are acceptable and even expected. We demonstrate that it is possible to rectify these errors by randomizing task order and modeling response latency. We evaluate our technique on a breadth of common labeling tasks such as image verification, word similarity, sentiment analysis and topic classification. Where prior work typically achieves a 0.25x to 1x speedup over fixed majority vote, our approach often achieves an order of magnitude (10x) speedup.", 
+            "authors": [
+                "Ranjay Krishna", 
+                "Kenji Hata", 
+                "Stephanie Chen", 
+                "Joshua Kravitz", 
+                "David A. Shamma", 
+                "Li Fei-Fei", 
+                "Michael S. Bernstein"
+            ], 
+            "n_citation": 29, 
+            "title": "Embracing Error to Enable Rapid Crowdsourcing", 
+            "venue": "human factors in computing systems", 
+            "year": 2016
+        }, 
+        "7030d6a2-aed0-4079-9bb7-a656ee3e6f78": {
+            "abstract": "Researchers have approached knowledge-base construction KBC with a wide range of data resources and techniques. The authors present Elementary, a prototype KBC system that is able to combine diverse resources and different KBC techniques via machine learning and statistical inference to construct knowledge bases. Using Elementary, they have implemented a solution to the TAC-KBP challenge with quality comparable to the state of the art, as well as an end-to-end online demonstration that automatically and continuously enriches Wikipedia with structured data by reading millions of webpages on a daily basis. The authors describe several challenges and their solutions in designing, implementing, and deploying Elementary. In particular, the authors first describe the conceptual framework and architecture of Elementary to integrate different data resources and KBC techniques in a principled manner. They then discuss how they address scalability challenges to enable Web-scale deployment. The authors empirically show that this decomposition-based inference approach achieves higher performance than prior inference approaches. To validate the effectiveness of Elementary's approach to KBC, they experimentally show that its ability to incorporate diverse signals has positive impacts on KBC quality.", 
+            "authors": [
+                "Feng Niu", 
+                "Ce Zhang", 
+                "Christopher Ré", 
+                "Jude W. Shavlik"
+            ], 
+            "n_citation": 52, 
+            "title": "Elementary: Large-Scale Knowledge-Base Construction via Machine Learning and Statistical Inference", 
+            "venue": "International Journal on Semantic Web and Information Systems", 
+            "year": 2012
+        }, 
+        "719a5559-b6be-48d2-8375-7387992f06f1": {
+            "abstract": "Traditional relation extraction methods require pre-specified relations and relation-specific human-tagged examples. Bootstrapping systems significantly reduce the number of training examples, but they usually apply heuristic-based methods to combine a set of strict hard rules, which limit the ability to generalize and thus generate a low recall. Furthermore, existing bootstrapping methods do not perform open information extraction (Open IE), which can identify various types of relations without requiring pre-specifications. In this paper, we propose a statistical extraction framework called  Statistical Snowball  (StatSnowball), which is a bootstrapping system and can perform both traditional relation extraction and Open IE.   StatSnowball uses the discriminative Markov logic networks (MLNs) and softens hard rules by learning their weights in a maximum likelihood estimate sense. MLN is a general model, and can be configured to perform different levels of relation extraction. In StatSnwoball, pattern selection is performed by solving an l 1 -norm penalized maximum likelihood estimation, which enjoys well-founded theories and efficient solvers. We extensively evaluate the performance of StatSnowball in different configurations on both a small but fully labeled data set and large-scale Web data. Empirical results show that StatSnowball can achieve a significantly higher recall without sacrificing the high precision during iterations with a small number of seeds, and the joint inference of MLN can improve the performance. Finally, StatSnowball is efficient and we have developed a working entity relation search engine called  Renlifang  based on it.", 
+            "authors": [
+                "Jun Zhu", 
+                "Zaiqing Nie", 
+                "Xiaojiang Liu", 
+                "Bo Zhang", 
+                "Ji-Rong Wen"
+            ], 
+            "n_citation": 289, 
+            "title": "StatSnowball: a statistical approach to extracting entity relationships", 
+            "venue": "international world wide web conferences", 
+            "year": 2009
+        }, 
+        "72aa6200-7589-4f16-b9f1-7ae795c87d1a": {
+            "abstract": "We introduce a weakly supervised approach for learning human actions modeled as interactions between humans and objects. Our approach is human-centric: We first localize a human in the image and then determine the object relevant for the action and its spatial relation with the human. The model is learned automatically from a set of still images annotated only with the action label. Our approach relies on a human detector to initialize the model learning. For robustness to various degrees of visibility, we build a detector that learns to combine a set of existing part detectors. Starting from humans detected in a set of images depicting the action, our approach determines the action object and its spatial relation to the human. Its final output is a probabilistic model of the human-object interaction, i.e., the spatial relation between the human and the object. We present an extensive experimental evaluation on the sports action data set from [1], the PASCAL Action 2010 data set [2], and a new human-object interaction data set.", 
+            "authors": [
+                "Alessandro Prest", 
+                "Cordelia Schmid", 
+                "Vittorio Ferrari"
+            ], 
+            "n_citation": 142, 
+            "title": "Weakly Supervised Learning of Interactions between Humans and Objects", 
+            "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence", 
+            "year": 2012
+        }, 
+        "78a7e13c-0840-4954-8e16-60ccfb410442": {
+            "abstract": "We pose the recognition problem as data association. In this setting, a novel object is explained solely in terms of a small set of exemplar objects to which it is visually similar. Inspired by the work of Frome et al., we learn separate distance functions for each exemplar; however, our distances are interpretable on an absolute scale and can be thresholded to detect the presence of an object. Our exemplars are represented as image regions and the learned distances capture the relative importance of shape, color, texture, and position features for that region. We use the distance functions to detect and segment objects in novel images by associating the bottom-up segments obtained from multiple image segmentations with the exemplar regions. We evaluate the detection and segmentation performance of our algorithm on real-world outdoor scenes from the LabelMe (B. Russel, et al., 2007) dataset and also show some promising qualitative image parsing results.", 
+            "authors": [
+                "Tomasz Malisiewicz", 
+                "Alexei A. Efros"
+            ], 
+            "n_citation": 183, 
+            "title": "Recognition by association via learning per-exemplar distances", 
+            "venue": "computer vision and pattern recognition", 
+            "year": 2008
+        }, 
+        "81163e27-8feb-48e0-b21b-a69d8555e64c": {
+            "abstract": "We study the problem of object classification when training and test classes are disjoint, i.e. no training examples of the target classes are available. This setup has hardly been studied in computer vision research, but it is the rule rather than the exception, because the world contains tens of thousands of different object classes and for only a very few of them image, collections have been formed and annotated with suitable class labels. In this paper, we tackle the problem by introducing attribute-based classification. It performs object detection based on a human-specified high-level description of the target objects instead of training images. The description consists of arbitrary semantic attributes, like shape, color or even geographic information. Because such properties transcend the specific learning task at hand, they can be pre-learned, e.g. from image datasets unrelated to the current task. Afterwards, new classes can be detected based on their attribute representation, without the need for a new training phase. In order to evaluate our method and to facilitate research in this area, we have assembled a new large-scale dataset, “Animals with Attributes”, of over 30,000 animal images that match the 50 classes in Osherson's classic table of how strongly humans associate 85 semantic attributes with animal classes. Our experiments show that by using an attribute layer it is indeed possible to build a learning object detection system that does not require any training images of the target classes.", 
+            "authors": [
+                "Christoph H. Lampert", 
+                "Hannes Nickisch", 
+                "Stefan Harmeling"
+            ], 
+            "n_citation": 1208, 
+            "title": "Learning to detect unseen object classes by between-class attribute transfer", 
+            "venue": "computer vision and pattern recognition", 
+            "year": 2009
+        }, 
+        "8fa389f5-22aa-4e3b-8ade-834c298fd14f": {
+            "abstract": "We present a novel approach to relation extraction, based on the observation that the information required to assert a relationship between two named entities in the same sentence is typically captured by the shortest path between the two entities in the dependency graph. Experiments on extracting top-level relations from the ACE (Automated Content Extraction) newspaper corpus show that the new shortest path dependency kernel outperforms a recent approach based on dependency tree kernels.", 
+            "authors": [
+                "Razvan C. Bunescu", 
+                "Raymond J. Mooney"
+            ], 
+            "n_citation": 730, 
+            "title": "A Shortest Path Dependency Kernel for Relation Extraction", 
+            "venue": "empirical methods in natural language processing", 
+            "year": 2005
+        }, 
+        "9b88deb9-b2d2-4cd3-b49e-d1abceae1ee3": {
+            "abstract": "We address a question answering task on real-world images that is set up as a Visual Turing Test. By combining latest advances in image representation and natural language processing, we propose Neural-Image-QA, an end-to-end formulation to this problem for which all parts are trained jointly. In contrast to previous efforts, we are facing a multi-modal problem where the language output (answer) is conditioned on visual and natural language input (image and question). Our approach Neural-Image-QA doubles the performance of the previous best approach on this problem. We provide additional insights into the problem by analyzing how much information is contained only in the language part for which we provide a new human baseline. To study human consensus, which is related to the ambiguities inherent in this challenging task, we propose two novel metrics and collect additional answers which extends the original DAQUAR dataset to DAQUAR-Consensus.", 
+            "authors": [
+                "Mateusz Malinowski", 
+                "Marcus Rohrbach", 
+                "Mario Fritz"
+            ], 
+            "n_citation": 200, 
+            "title": "Ask Your Neurons: A Neural-Based Approach to Answering Questions about Images", 
+            "venue": "international conference on computer vision", 
+            "year": 2015
+        }, 
+        "9e4859ce-16a8-4d7f-ba0d-21fe49950105": {
+            "abstract": "The Natural Language Toolkit is a suite of program modules, data sets and tutorials supporting research and teaching in computational linguistics and natural language processing. NLTK is written in Python and distributed under the GPL open source license. Over the past year the toolkit has been rewritten, simplifying many linguistic data structures and taking advantage of recent enhancements in the Python language. This paper reports on the simplified toolkit and explains how it is used in teaching NLP.", 
+            "authors": [
+                "Steven Bird"
+            ], 
+            "n_citation": 580, 
+            "title": "NLTK: The Natural Language Toolkit", 
+            "venue": "meeting of the association for computational linguistics", 
+            "year": 2006
+        }, 
+        "a5ddc70a-af08-4a77-b08a-09dd39a5f46a": {
+            "abstract": "Most word representation methods assume that each word owns a single semantic vector. This is usually problematic because lexical ambiguity is ubiquitous, which is also the problem to be resolved by word sense disambiguation. In this paper, we present a unified model for joint word sense representation and disambiguation, which will assign distinct representations for each word sense. 1 The basic idea is that both word sense representation (WSR) and word sense disambiguation (WSD) will benefit from each other: (1) highquality WSR will capture rich information about words and senses, which should be helpful for WSD, and (2) high-quality WSD will provide reliable disambiguated corpora for learning better sense representations. Experimental results show that, our model improves the performance of contextual word similarity compared to existing WSR methods, outperforms stateof-the-art supervised methods on domainspecific WSD, and achieves competitive performance on coarse-grained all-words WSD.", 
+            "authors": [
+                "Xinxiong Chen", 
+                "Zhiyuan Liu", 
+                "Maosong Sun"
+            ], 
+            "n_citation": 156, 
+            "title": "A Unified Model for Word Sense Representation and Disambiguation", 
+            "venue": "empirical methods in natural language processing", 
+            "year": 2014
+        }, 
+        "a6ee5009-aebc-4cda-8ef9-d855297b949c": {
+            "abstract": "With the advent of the Internet, billions of images are now freely available online and constitute a dense sampling of the visual world. Using a variety of non-parametric methods, we explore this world with the aid of a large dataset of 79,302,017 images collected from the Internet. Motivated by psychophysical results showing the remarkable tolerance of the human visual system to degradations in image resolution, the images in the dataset are stored as 32 x 32 color images. Each image is loosely labeled with one of the 75,062 non-abstract nouns in English, as listed in the Wordnet lexical database. Hence the image database gives a comprehensive coverage of all object categories and scenes. The semantic information from Wordnet can be used in conjunction with nearest-neighbor methods to perform object classification over a range of semantic levels minimizing the effects of labeling noise. For certain classes that are particularly prevalent in the dataset, such as people, we are able to demonstrate a recognition performance comparable to class-specific Viola-Jones style detectors.", 
+            "authors": [
+                "Antonio Torralba", 
+                "Rob Fergus", 
+                "William T. Freeman"
+            ], 
+            "n_citation": 1356, 
+            "title": "80 Million Tiny Images: A Large Data Set for Nonparametric Object and Scene Recognition", 
+            "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence", 
+            "year": 2008
+        }, 
+        "ba963abd-707d-4657-afdb-325986098ce9": {
+            "abstract": "We propose a method for automatically answering questions about images by bringing together recent advances from natural language processing and computer vision. We combine discrete reasoning with uncertain predictions by a multi-world approach that represents uncertainty about the perceived world in a bayesian framework. Our approach can handle human questions of high complexity about realistic scenes and replies with range of answer like counts, object classes, instances and lists of them. The system is directly trained from question-answer pairs. We establish a first benchmark for this task that can be seen as a modern attempt at a visual turing test.", 
+            "authors": [
+                "Mateusz Malinowski", 
+                "Mario Fritz"
+            ], 
+            "n_citation": 133, 
+            "title": "A Multi-World Approach to Question Answering about Real-World Scenes based on Uncertain Input", 
+            "venue": "neural information processing systems", 
+            "year": 2014
+        }, 
+        "d46ab655-7e66-4615-be58-d706f085b8a2": {
+            "abstract": "In this paper, we present a multimodal Recurrent Neural Network (m-RNN) model for generating novel sentence descriptions to explain the content of images. It directly models the probability distribution of generating a word given previous words and the image. Image descriptions are generated by sampling from this distribution. The model consists of two sub-networks: a deep recurrent neural network for sentences and a deep convolutional network for images. These two sub-networks interact with each other in a multimodal layer to form the whole m-RNN model. The effectiveness of our model is validated on three benchmark datasets (IAPR TC-12, Flickr 8K, and Flickr 30K). Our model outperforms the state-of-the-art generative method. In addition, the m-RNN model can be applied to retrieval tasks for retrieving images or sentences, and achieves significant performance improvement over the state-of-the-art methods which directly optimize the ranking objective function for retrieval.", 
+            "authors": [
+                "Junhua Mao", 
+                "Wei Xu", 
+                "Yi Yang", 
+                "Jiang Wang", 
+                "Alan L. Yuille"
+            ], 
+            "n_citation": 165, 
+            "title": "Explain Images with Multimodal Recurrent Neural Networks", 
+            "venue": "arXiv: Computer Vision and Pattern Recognition", 
+            "year": 2014
+        }, 
+        "e2f7a74a-8430-4463-94ce-fe85dfd309f9": {
+            "abstract": "We trained a large, deep convolutional neural network to classify the 1.2 million high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 different classes. On the test data, we achieved top-1 and top-5 error rates of 37.5% and 17.0% which is considerably better than the previous state-of-the-art. The neural network, which has 60 million parameters and 650,000 neurons, consists of five convolutional layers, some of which are followed by max-pooling layers, and three fully-connected layers with a final 1000-way softmax. To make training faster, we used non-saturating neurons and a very efficient GPU implementation of the convolution operation. To reduce overriding in the fully-connected layers we employed a recently-developed regularization method called \"dropout\" that proved to be very effective. We also entered a variant of this model in the ILSVRC-2012 competition and achieved a winning top-5 test error rate of 15.3%, compared to 26.2% achieved by the second-best entry.", 
+            "authors": [
+                "Alex Krizhevsky", 
+                "Ilya Sutskever", 
+                "Geoffrey E. Hinton"
+            ], 
+            "n_citation": 22884, 
+            "title": "ImageNet Classification with Deep Convolutional Neural Networks", 
+            "venue": "neural information processing systems", 
+            "year": 2012
+        }, 
+        "f1c460ee-4ea3-45e2-aa0c-34c3f88676dc": {
+            "abstract": "Parameter-specific adaptive learning rate methods are computationally efficient ways to reduce the ill-conditioning problems encountered when training large deep networks. Following recent work that strongly suggests that most of the critical points encountered when training such networks are saddle points, we find how considering the presence of negative eigenvalues of the Hessian could help us design better suited adaptive learning rate schemes, i.e., diagonal preconditioners. We show that the optimal preconditioner is based on taking the absolute value of the Hessian's eigenvalues, which is not what Newton and classical preconditioners like Jacobi's do. In this paper, we propose a novel adaptive learning rate scheme based on the equilibration preconditioner and show that RMSProp approximates it, which may explain some of its success in the presence of saddle points. Whereas RMSProp is a biased estimator of the equilibration preconditioner, the proposed stochastic estimator, ESGD, is unbiased and only adds a small percentage to computing time. We find that both schemes yield very similar step directions but that ESGD sometimes surpasses RMSProp in terms of convergence speed, always clearly improving over plain stochastic gradient descent.", 
+            "authors": [
+                "Yann N. Dauphin", 
+                "Harm de Vries", 
+                "Junyoung Chung", 
+                "Yoshua Bengio"
+            ], 
+            "n_citation": 41, 
+            "title": "RMSProp and equilibrated adaptive learning rates for non-convex optimization", 
+            "venue": "arXiv: Learning", 
+            "year": 2015
+        }, 
+        "f64b4ead-83c4-41f2-9326-b3f9faed8106": {
+            "abstract": "Interpretation of images and videos containing humans interacting with different objects is a daunting task. It involves understanding scene or event, analyzing human movements, recognizing manipulable objects, and observing the effect of the human movement on those objects. While each of these perceptual tasks can be conducted independently, recognition rate improves when interactions between them are considered. Motivated by psychological studies of human perception, we present a Bayesian approach which integrates various perceptual tasks involved in understanding human-object interactions. Previous approaches to object and action recognition rely on static shape or appearance feature matching and motion analysis, respectively. Our approach goes beyond these traditional approaches and applies spatial and functional constraints on each of the perceptual elements for coherent semantic interpretation. Such constraints allow us to recognize objects and actions when the appearances are not discriminative enough. We also demonstrate the use of such constraints in recognition of actions from static images without using any motion information.", 
+            "authors": [
+                "Abhinav Gupta", 
+                "Aniruddha Kembhavi", 
+                "Larry S. Davis"
+            ], 
+            "n_citation": 335, 
+            "title": "Observing Human-Object Interactions: Using Spatial and Functional Compatibility for Recognition", 
+            "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence", 
+            "year": 2009
+        }, 
+        "fc969b34-ce5f-40f7-a915-ac1889c6e4a1": {
+            "abstract": "IBM Research undertook a challenge to build a computer system that could compete at the human champion level in real time on the American TV Quiz show, Jeopardy! The extent of the challenge includes fielding a real-time automatic contestant on the show, not merely a laboratory exercise. The Jeopardy! Challenge helped us address requirements that led to the design of the DeepQA architecture and the implementation of Watson. After 3 years of intense research and development by a core team of about 20 researches, Watson is performing at human expert-levels in terms of precision, confidence and speed at the Jeopardy! Quiz show. Our results strongly suggest that DeepQA is an effective and extensible architecture that may be used as a foundation for combining, deploying, evaluating and advancing a wide range of algorithmic techniques to rapidly advance the field of QA.", 
+            "authors": [
+                "David A. Ferrucci", 
+                "Eric W. Brown", 
+                "Jennifer Chu-Carroll", 
+                "James Fan", 
+                "David Gondek", 
+                "Aditya Kalyanpur", 
+                "Adam Lally", 
+                "J. William Murdock", 
+                "Eric Nyberg", 
+                "John M. Prager", 
+                "Nico Schlaefer", 
+                "Christopher A. Welty"
+            ], 
+            "n_citation": 1134, 
+            "title": "Building Watson: An Overview of the DeepQA Project", 
+            "venue": "Ai Magazine", 
+            "year": 2010
+        }, 
+        "fcde55de-01c4-4f60-93a6-8ae4acc5be7b": {
+            "abstract": "We introduce two multimodal neural language models: models of natural language that can be conditioned on other modalities. An imagetext multimodal neural language model can be used to retrieve images given complex sentence queries, retrieve phrase descriptions given image queries, as well as generate text conditioned on images. We show that in the case of image-text modelling we can jointly learn word representations and image features by training our models together with a convolutional network. Unlike many of the existing methods, our approach can generate sentence descriptions for images without the use of templates, structured prediction, and/or syntactic trees. While we focus on imagetext modelling, our algorithms can be easily applied to other modalities such as audio.", 
+            "authors": [
+                "Ryan Kiros", 
+                "Ruslan Salakhutdinov", 
+                "Richard S. Zemel"
+            ], 
+            "n_citation": 184, 
+            "title": "Multimodal Neural Language Models", 
+            "venue": "international conference on machine learning", 
+            "year": 2014
+        }
+    }, 
+    "title": "Visual Genome: Connecting Language and Vision Using Crowdsourced Dense Image Annotations", 
+    "venue": "International Journal of Computer Vision", 
+    "year": 2017
+}
